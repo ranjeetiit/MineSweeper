@@ -1,0 +1,34 @@
+*{
+	margin : 0;
+	padding: 0;
+}
+.container{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height : 100vh;
+}
+.puzzleContainer{
+	display: flex;
+	background-color: black;
+	color: white;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  	align-items: center;
+}
+.puzzleContainer .cell{
+	border: 1px solid white;
+	box-sizing: border-box;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puzzleContainer .cell.revealed{
+	background-color: red;
+}
+.puzzleContainer .cell.bomb{
+	background-color: yellow;
+}
